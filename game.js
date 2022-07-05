@@ -74,6 +74,10 @@ function resetAllParameters() {
 }
 
 function gameOver() {
+  $("body").addClass("game-over");
+  setTimeout(function() {
+    $("body").removeClass("game-over");
+  }, 200);
   $("h1").text("Press A Key To Start Over");
   playSound("wrong");
   resetParameters();

@@ -31,9 +31,10 @@ function animatePress(currentColour) {
 }
 
 $(".btn").click(function(event) {
+  if (gameStarted) {
   userChosenColour = event.target.id;
   userClickedPattern.push(userChosenColour);
-  checkAnswer(index)
+  checkAnswer(index)}
 });
 
 function checkAnswer(currentLevel) {

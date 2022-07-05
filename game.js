@@ -27,7 +27,7 @@ function animatePress(currentColour) {
   currentButton.addClass("pressed");
   setTimeout(function() {
     currentButton.removeClass("pressed");
-  }, 100);
+  }, 300);
 }
 
 $(".btn").click(function(event) {

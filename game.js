@@ -18,7 +18,7 @@ function nextSequence() {
 }
 
 function playSound(colour) {
-  var colourSound = new Audio("/sounds/" + colour + ".mp3");
+  var colourSound = new Audio("./sounds/" + colour + ".mp3");
   colourSound.play();
 }
 
